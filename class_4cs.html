@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./subject_list.css">
+  </style>
+  <script language="javascript" type="text/javascript">
+  function dia1(event){
+    var dialog1 = document.querySelector('.dia1');
+    dialog1.showModal();
+    var btn_close = document.getElementById('dia_close');
+    btn_close.addEventListener('click', function() {
+      dialog1.close();
+    }, false);
+  }
+  function dia2(event){
+    var dialog2 = document.querySelector('.dia2');
+    dialog2.showModal();
+    var btn_close2 = document.getElementById('dia_close2');
+    btn_close2.addEventListener('click', function() {
+      dialog2.close();
+    }, false);
+  }
+  function dia3(event){
+    var dialog3 = document.querySelector('.dia3');
+    dialog3.showModal();
+    var btn_close3 = document.getElementById('dia_close3');
+    btn_close3.addEventListener('click', function() {
+      dialog3.close();
+    }, false);
+  }
+  </script>
+</head>
+<body>
+  <h1 class="title">
+    時間割
+  </h1>
+  <a href="./newtest.html" class="sub back">←クラス選択へ</a> <br>
+  <a href="./class_4cs.html" class="sub back">←後期時間割へ</a> <br>
+  <a href="http://www.salesio-sp.ac.jp/" target="_blank" class="sub forw">公式サイトへ→</a> <br>
+  <a href="https://lms.salesio-sp.ac.jp/webclass/login.php" target="_blank" class="sub forw">WebClassへ→</a> <br>
+  <h1 class="class">
+    4CS 前期
+  </h1>
+  <br>
+  <br>
+
+  <table>
+    <tr>
+      <th class="day roco"></th>
+      <th class="col">月</th>
+      <th class="col">火</th>
+      <th class="col">水</th>
+      <th class="col">木</th>
+      <th class="col">金</th>
+      <th class="day col">土</th>
+    </tr>
+    <tr>
+      <td class="row">1・2限</td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">HR</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-解析学Ⅱ</a>
+      </td>
+      <td>
+        <a href="#" onclick="dia1(event)" class="sub choose">4・5年-選択B</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-情報工学基礎演習Ⅰ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-解析学Ⅱ</a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="row">3・4限</td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-統計解析学Ⅰ</a>
+      </td>
+      <td>
+        <a href="#" onclick="dia2(event)" class="sub choose">4年-選択英語</a>
+      </td>
+      <td>
+        <a href="#" onclick="dia3(event)" class="sub choose">4・5年-選択D</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-数値計算Ⅰ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-技術文書作成／前</a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="row">5・6限</td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-英語演習</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-離散数学Ⅰ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-情報工学実験Ⅴ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-計算機アーキテクチャⅠ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-体育実技</a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="row">7・8限</td>
+      <!--<td align="left" valign="top" class="">
+        <a href="./sub_japanese.html" target="_top">4CS-国語</a>
+      </td>!-->
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-国語</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-オペレーションズ・リサーチⅠ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-情報工学実験Ⅴ</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-情報ネットワーク</a>
+      </td>
+      <td>
+        <a href="./sub/CS4_JP.html" class="sub">4CS-プログラミング応用Ⅰ</a>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <dialog class="dia1">
+    <h1>　　　選択B　　　</h1>
+    <p>
+      <a href="./sub/CS4_JP.html" class="sub">中国語I</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">韓国語I</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">心理学</a>
+    </p>
+    <a href="#" class="close" id="dia_close">閉じる</a>
+  </dialog>
+
+  <dialog class="dia2">
+    <h1>　　　選択英語　　　</h1>
+    <p>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語I</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語Ⅱ</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語Ⅲ</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語Ⅳ</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語Ⅴ</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">選択英語Ⅵ</a>
+    </p>
+    <a href="#" class="close" id="dia_close2">閉じる</a>
+  </dialog>
+
+  <dialog class="dia3">
+    <h1>　　　選択D　　　</h1>
+    <p>
+      <a href="./sub/CS4_JP.html" class="sub">DTP概論</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">工業デザイン概論</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">物理学特論A</a> <br>
+      <a href="./sub/CS4_JP.html" class="sub">映像メディア概論A</a>
+    </p>
+    <a href="#" class="close" id="dia_close3">閉じる</a>
+  </dialog>
+
+
+
+</body>
+</html>
