@@ -1,0 +1,55 @@
+.name{
+    font-size: 46px;
+    font-family: serif;
+    text-align: center;
+}
+body{
+    margin: 0ex;
+}
+.home_body{
+    background-image: url(home.jpeg);
+    background-size:cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+.first_menu{
+    text-align: center;
+}
+select{
+    font-size:24px;
+    padding:10px;
+    margin-right: 12px;
+}
+.checkButton{
+    font-size:24px;
+    padding:10px;
+    margin-left: 12px;
+}
+button{
+    font-size:20px;
+    margin:10px;
+}
+.back_button{
+    float:left;
+}
+.notice_button{
+    float: right;
+}
+.header_4CS{
+    width:100%;
+    height:55px;
+    background-color: rgb(112, 138, 110);
+}
+.body_4CS{
+    background-color: azure;
+    width:100%;
+    height:200px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
