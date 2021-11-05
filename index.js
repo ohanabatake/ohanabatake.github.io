@@ -10,12 +10,9 @@ let classSelect = document.getElementById('class');                //プルダ�
 let checkButton = document.getElementById('checkButton');
 checkButton.addEventListener('click', butotnClick);                //OK! ボタンにクリック時の動作を追加
 
-function isSmartPhone() {
-  if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-    document.getElementById('class').className = 'select_mobile';
-    document.getElementById('checkButton').className = 'button_mobile';
-  }
-  else {
-    return false;
-  }
+if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+  document.getElementById('class').className = 'select_mobile';
+  document.getElementById('checkButton').className = 'button_mobile';
+}
+else {
 }
