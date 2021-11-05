@@ -1,0 +1,254 @@
+* {
+    animation-name: fadein;
+    animation-duration: 1.4s;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 240px;
+  text-align: center;
+  font-family: serif;
+  border-bottom: double 5px #c778ff;
+}
+
+h3 {
+  margin: 0;
+}
+
+.input {
+  width: 100px;
+  margin-left: 40px;
+}
+
+.input01 {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  font-size: 18px;
+  background-color: #c778ff10;
+  border-radius: 16px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+  margin-left: 240px;
+}
+
+.input02 {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  font-size: 18px;
+  background-color: #c778ff10;
+  border-radius: 16px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: -283px;
+  left: 620px;
+}
+
+.input03 {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  font-size: 18px;
+  background-color: #c778ff10;
+  border-radius: 16px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -280px;
+  margin-left: 240px;
+}
+
+.input04 {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  font-size: 18px;
+  background-color: #c778ff10;
+  border-radius: 16px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: -283px;
+  left: 620px;
+}
+
+.input_T {
+  font-size: 22px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 140px;
+  text-align: center;
+  font-family: serif;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px #c778ff;
+}
+
+.result {
+  font-size: 20px;
+  position: relative;
+  top: -580px;
+  left: 460px;
+  margin-left: 40%;
+  padding: 30px 50px;
+  text-align: center;
+  text-decoration: none;
+  background: #c778ff;
+}
+
+.back {
+  position: relative;
+  top: -880px;
+  left: -860px;
+  font-size: 20px;
+  margin-left: 240px;
+  color: #78b0ff;
+  text-decoration: none;
+  outline: none;
+}
+
+.result::before {
+  content: "";
+  position: absolute;
+  right: -180px;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: transparent transparent transparent #c778ff;
+  border-width: 40px 0px 40px 40px;
+}
+
+.re_T {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.re00 {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  width: 200px;
+}
+
+.re01 {
+  position: relative;
+  top: -80px;
+  left: 400px;
+  width: 200px;
+}
+
+.re02 {
+  position: relative;
+  top: 0px;
+  left: 100px;
+  width: 200px;
+}
+
+.re03 {
+  position: relative;
+  top: -100px;
+  left: 400px;
+  width: 200px;
+}
+
+.pt0 {
+  position: absolute;
+  top: 210px;
+  left: 20px;
+}
+
+.pt1 {
+  position: absolute;
+  top: 210px;
+  left: 320px;
+}
+
+.pt2 {
+  position: absolute;
+  top: 440px;
+  left: 100px;
+}
+
+.pt3 {
+  position: absolute;
+  top: 440px;
+  left: 320px;
+}
+
+.pt {
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #f00;
+  /* transform: rotate(-3deg); */
+  opacity: 0;
+  animation: fadein2 0.4s ease forwards;
+  animation-delay: 1.2s;
+}
+@keyframes fadein2 {
+  100% { opacity: 1;}
+}
+
+.ptx {
+  position: relative;
+  font-size: 20px;
+  width: 640px;
+  left: -180px;
+  text-align: center;
+  border-bottom: solid 2px #c778ff;
+}
+
+dialog {
+  font-size: 18px;
+  height: 700px;
+  width: 700px;
+  padding: 5px 0px 30px;
+  padding-bottom: 30px;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1em black;
+}
+
+dialog p {
+  margin-left: 30px;
+}
+
+.close {
+  position: relative;
+  top: 100px;
+  font-weight: bold;
+  margin-left: 21.5vw;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: #c778ff;
+  border-radius: 4px;
+  background: #ECECEC;
+}

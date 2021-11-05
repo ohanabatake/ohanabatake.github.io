@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>4CS 国語</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./CS4_JP.css">
+  <script src="sub_js.js"></script>
+  <title>サンプルのHTMLです</title>
+  <style type="text/css">
+
+  </style>
+  <script language="javascript" type="text/javascript">
+    window.onload = function() {  // load関数 LSからデータ持ってきてinputに入れる
+      let mydata = ["","","","","",""];
+      mydata = JSON.parse(localStorage.getItem(`S_CS4_JP_mydata0`));
+      for(let i = 0; i < 6; i++) document.getElementById(`CS4_JP_0${i}`).value = mydata[i];
+      mydata = JSON.parse(localStorage.getItem(`S_CS4_JP_mydata1`));
+      for(let i = 0; i < 6; i++) document.getElementById(`CS4_JP_1${i}`).value = mydata[i];
+      mydata = JSON.parse(localStorage.getItem(`S_CS4_JP_mydata2`));
+      for(let i = 0; i < 6; i++) document.getElementById(`CS4_JP_2${i}`).value = mydata[i];
+      mydata = JSON.parse(localStorage.getItem(`S_CS4_JP_mydata3`));
+      for(let i = 0; i < 6; i++) document.getElementById(`CS4_JP_3${i}`).value = mydata[i];
+    }
+  </script>
+</head>
+
+<body>
+
+  <div><!--国語-->
+  <h1 class="title">
+    国語
+  </h1>
+  <div class="input01">
+    <h4 class="input_T">前期中間</h4>
+    　定期試験 <input id="CS4_JP_00" type="number" class="input"> <br>
+    小テスト 1 <input id="CS4_JP_01" type="number" class="input"> <br>
+    小テスト 2 <input id="CS4_JP_02" type="number" class="input"> <br>
+    小テスト 3 <input id="CS4_JP_03" type="number" class="input"> <br>
+    小テスト 4 <input id="CS4_JP_04" type="number" class="input"> <br>
+    小テスト 5 <input id="CS4_JP_05" type="number" class="input"> <br>
+  </div> <br>
+  <div class="input02">
+    <h4 class="input_T">前期期末</h4>
+    　定期試験 <input id="CS4_JP_10" type="number" class="input"> <br>
+    小テスト 1 <input id="CS4_JP_11" type="number" class="input"> <br>
+    小テスト 2 <input id="CS4_JP_12" type="number" class="input"> <br>
+    小テスト 3 <input id="CS4_JP_13" type="number" class="input"> <br>
+    小テスト 4 <input id="CS4_JP_14" type="number" class="input"> <br>
+    小テスト 5 <input id="CS4_JP_15" type="number" class="input"> <br>
+  </div> <br>
+  <div class="input03">
+    <h4 class="input_T">後期中間</h4>
+    　定期試験 <input id="CS4_JP_20" type="number" class="input"> <br>
+    小テスト 1 <input id="CS4_JP_21" type="number" class="input"> <br>
+    小テスト 2 <input id="CS4_JP_22" type="number" class="input"> <br>
+    小テスト 3 <input id="CS4_JP_23" type="number" class="input"> <br>
+    小テスト 4 <input id="CS4_JP_24" type="number" class="input"> <br>
+    小テスト 5 <input id="CS4_JP_25" type="number" class="input"> <br>
+  </div> <br>
+  <div class="input04">
+    <h4 class="input_T">後期期末</h4>
+    　定期試験 <input id="CS4_JP_30" type="number" class="input"> <br>
+    小テスト 1 <input id="CS4_JP_31" type="number" class="input"> <br>
+    小テスト 2 <input id="CS4_JP_32" type="number" class="input"> <br>
+    小テスト 3 <input id="CS4_JP_33" type="number" class="input"> <br>
+    小テスト 4 <input id="CS4_JP_34" type="number" class="input"> <br>
+    小テスト 5 <input id="CS4_JP_35" type="number" class="input"> <br>
+  </div> <br>
+  <a href="#" onclick="Sub_4CS_Japanese(event)" class="result">計算</a>
+  <a href="../class_4cs.html" class="back">←時間割へ</a> <br>
+  </div>
+
+  <dialog>
+  <h4 class="input_T">成績</h4>
+  <div class="re00">
+    <h3 class="re_T">前期中間</h3>
+    区間評価 : <span id="CS4_JP_span_00"> </span> <br>
+    総合評価 : <span id="CS4_JP_span_01"> </span>
+  </div>
+  <div class="re01">
+    <h3 class="re_T">前期期末</h3>
+    区間評価 : <span id="CS4_JP_span_10"> </span> <br>
+    総合評価 : <span id="CS4_JP_span_11"> </span>
+  </div>
+  <div class="re02">
+    <h3 class="re_T">後期中間</h3>
+    区間評価 : <span id="CS4_JP_span_20"> </span> <br>
+    総合評価 : <span id="CS4_JP_span_21"> </span>
+  </div>
+  <div class="re03">
+    <h3 class="re_T">後期期末</h3>
+    区間評価 : <span id="CS4_JP_span_30"> </span> <br>
+    総合評価 : <span id="CS4_JP_span_31"> </span>
+  </div>
+  <a href="#" id="dia_close" class="close">閉じる</a>
+  <span class="ptx" id="ptx">平均 点とれば単位取得です</span>
+  <span class="pt pt0" id="pt">a</span>
+  </dialog>
+
+</body>
+
+</html>

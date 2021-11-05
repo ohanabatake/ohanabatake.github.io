@@ -12,7 +12,8 @@ checkButton.addEventListener('click', butotnClick);                //OK! ボタ�
 
 function isSmartPhone() {
   if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-    return true;
+    document.getElementById('class').className = 'select_mobile';
+    document.getElementById('checkButton').className = 'button_mobile';
   }
   else {
     return false;
